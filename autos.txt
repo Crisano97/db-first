@@ -1,23 +1,23 @@
 Nome Tabella : macchine
 
-id
-azienda_produttrice
-nome_modello
-matricola
-anno_di_produzione
-luogo_di_produzione
-targa
-motore
-trasmissione
-alimentazione
-colore
-componenti_della_macchina
-accessori
-consumo_di_carburante_per_chilometro
-provenienza_della_macchina
-stato_della_macchina
-numero_di_proprietari
-chilometraggio
-revisione
-prezzo
-sconto
+id - intero - SMALLINT - PRIMARY_KEY - AUTO_INCREMENT - NOTNULL
+azienda_produttrice - stringa - VARCHAR(30) - NOTNULL
+nome_modello - stringa - VARCHAR(30) - NOTNULL
+matricola - stringa - VARCHAR(17) - UNIQUE - NOTNULL
+anno_di_produzione - data - DATE - NOTNULL
+luogo_di_produzione - stringa - VARCHAR(30) - NOTNULL
+targa - stringa - VARCHAR(7) - UNIQUE - NOTNULL
+motore - stringa - VARCHAR(30) - NOTNULL
+trasmissione - stringa - VARCHAR(30) - NOTNULL
+alimentazione - stringa - VARCHAR(60) - NOTNULL
+colore - stringa - VARCHAR(20) - NOTNULL
+componenti_della_macchina - striga - TEXT - NOTNULL
+accessori  - striga - TEXT - NULL
+consumo_di_carburante_per_chilometro - stringa - VARCHAR(30) - NOTNULL
+provenienza_della_macchina - stringa - VARCHAR(100) - NULL
+stato_della_macchina - stringa - VARCHAR(255) - NOTNULL
+numero_di_proprietari - intero - TINYINT - NOTNULL
+chilometraggio - intero - MEDIUMINT - NOTNULL
+revisione - boolean - TINYINT - DEFAULT(0) - NULL
+prezzo - float - FLOAT(8,2) - NOTNULL
+sconto - intero - TINYINT - NULL
