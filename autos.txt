@@ -1,0 +1,23 @@
+Nome Tabella : macchine
+
+id
+azienda_produttrice
+nome_modello
+matricola
+anno_di_produzione
+luogo_di_produzione
+targa
+motore
+trasmissione
+alimentazione
+colore
+componenti_della_macchina
+accessori
+consumo_di_carburante_per_chilometro
+provenienza_della_macchina
+stato_della_macchina
+numero_di_proprietari
+chilometraggio
+revisione
+prezzo
+sconto
